@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Pearl & Wintah 🤞❤️</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Georgia,serif;color:#fff;overflow:hidden}
+body{background:#12030b}.page{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:20px;background:linear-gradient(135deg,#16020c,#520b2c,#16000b)}
+.page.active{display:flex}.page:before{content:"";position:absolute;inset:-30%;background:radial-gradient(circle at 20% 20%,#ff4f9140,transparent 28%),radial-gradient(circle at 80% 70%,#a04cff38,transparent 30%);filter:blur(35px);animation:bg 9s infinite alternate}
+@keyframes bg{to{transform:scale(1.15) rotate(4deg)}}.card{position:relative;z-index:2;width:min(440px,100%);max-height:92vh;overflow:auto;text-align:center;padding:32px 24px;border:1px solid #ffffff33;border-radius:30px;background:#ffffff12;backdrop-filter:blur(18px);box-shadow:0 20px 70px #0008}
+.card::-webkit-scrollbar{width:0}.heart{font-size:62px;display:block;animation:beat 1.5s infinite}@keyframes beat{50%{transform:scale(1.15)}}
+h1{font-size:34px;line-height:1.2}h2{font-size:28px}p{font-size:18px;line-height:1.75;color:#ffe4ee}.quote{font-size:21px;font-style:italic}
+input{width:100%;padding:15px;margin:6px 0;border:0;border-radius:15px;font-size:17px;text-align:center;outline:0}.password{letter-spacing:5px}
+button{width:100%;padding:15px;margin-top:12px;border:0;border-radius:16px;background:linear-gradient(100deg,#ff3f82,#c94cff);color:#fff;font-weight:bold;font-size:17px;cursor:pointer}
+.back{background:#ffffff18}.error{min-height:22px;color:#ffb2ca}.small{font-size:13px;color:#ffc4d6}
+.slide{display:none;animation:in .6s ease}.slide.active{display:block}@keyframes in{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
+.progress{display:flex;justify-content:center;gap:7px;margin:14px}.dot{width:8px;height:8px;border-radius:50%;background:#ffffff44}.dot.on{background:#fff}
+.nav{display:flex;gap:10px}.nav button{flex:1}.signature{color:#ffb3cd;font-style:italic}.final{font-size:25px;color:#fff}
+.float{position:fixed;z-index:1;bottom:-40px;animation:rise linear forwards;pointer-events:none}@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+</style>
+</head>
+<body>
+
+<section id="p1" class="page active"><div class="card">
+<span class="heart">💖</span><h1>A Little Secret For You</h1>
+<p>Behind this door is a little piece of my heart, written especially for you, Wintah. 🥰</p>
+<input id="user" placeholder="Username" autocomplete="off">
+<input id="pass" class="password" type="password" inputmode="numeric" maxlength="6" placeholder="6-digit password">
+<button onclick="login()">Enter My Heart ❤️</button><div id="err" class="error"></div>
+<p class="small">Username: pearl&Wintah🤞</p></div></section>
+
+<section id="p2" class="page"><div class="card">
+<span class="heart">🥰</span><h1>Warmly Welcome, My Wintah</h1>
+<p class="quote">“If you are here, you've found the little place where I keep words I don't always know how to say.”</p>
+<p>Don't rush. There is more waiting inside... and every page carries a little more of what lives in my heart. ❤️</p>
+<button onclick="go(3)">Wintah open my heart</button></div></section>
+
+<section id="p3" class="page"><div class="card">
+<span class="heart">💗</span><h1>Welcome, My Love</h1>
+<p>There is something beautiful about being truly remembered by someone. I made these pages so you can feel <b>seen, valued and deeply loved.</b></p>
+<p>Take a breath and smile... the next pages are pieces of my heart that I chose to place in your hands. 🥹❤️</p>
+<button onclick="go(4)">continue to see the fact on my heart ❤️</button></div></section>
+
+<section id="p4" class="page"><div class="card">
+<div class="slide active"><span class="heart">💞</span><h2>Chapter I — Our Time</h2><p>Every moment we've shared has become part of a story I never want to forget. The laughs, quiet moments and little memories mean more to me than words can hold.</p></div>
+<div class="slide"><span class="heart">💓</span><h2>Chapter II — What We Built</h2><p>We've spent time learning each other, growing closer and creating memories that belong only to us. I celebrate every chapter we've already lived.</p></div>
+<div class="slide"><span class="heart">💖</span><h2>Chapter III — What's Ahead</h2><p>The sweetest thought is knowing our story still has pages left. I look forward to the days, adventures and countless little moments we haven't shared yet.</p></div>
+<div class="progress"><i class="dot on"></i><i class="dot"></i><i class="dot"></i></div>
+<div class="nav"><button class="back" onclick="prev(4)">← Back</button><button onclick="next(4)">Next →</button></div></div></section>
+
+<section id="p5" class="page"><div class="card">
+<div class="slide active"><span class="heart">❤️</span><h2>Forever Begins Here</h2><p>My promise is simple: I want to keep choosing you — not only on beautiful days, but through ordinary days too.</p></div>
+<div class="slide"><span class="heart">💍</span><h2>Always & Always</h2><p>I want to love you with patience, honesty, tenderness and intention. I want our future to hold more laughter, memories and reasons to hold each other close.</p></div>
+<div class="slide"><span class="heart">🌹</span><h2>My Final Chapter</h2><p class="final">Wintah, I love you forever and always. ❤️</p><p>I can't promise every day will be perfect, but I can promise my heart will keep making room for love, effort and us.</p><p class="signature">Forever yours,<br>with all my heart. 💋❤️</p></div>
+<div class="progress"><i class="dot on"></i><i class="dot"></i><i class="dot"></i></div>
+<div class="nav"><button class="back" onclick="prev(5)">← Back</button><button onclick="next(5)" id="next5">Next →</button></div></div></section>
+
+<script>
+const USER="pearl&Wintah🤞",PASS="153490",idx={4:0,5:0};
+function go(n){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));document.getElementById("p"+n).classList.add("active");hearts()}
+function login(){let u=document.getElementById("user").value.trim(),p=document.getElementById("pass").value,e=document.getElementById("err");if(u===USER&&p===PASS){e.textContent="";go(2)}else{e.textContent="The secret doesn't match yet... try again ❤️";document.getElementById("pass").value=""}}
+document.getElementById("pass").addEventListener("keydown",e=>{if(e.key==="Enter")login()});
+function show(n,i){let box=document.getElementById("p"+n),s=box.querySelectorAll(".slide"),d=box.querySelectorAll(".dot");idx[n]=(i+s.length)%s.length;s.forEach((x,k)=>x.classList.toggle("active",k===idx[n]));d.forEach((x,k)=>x.classList.toggle("on",k===idx[n]));if(n===5)document.getElementById("next5").textContent=idx[5]===2?"Close With Love ❤️":"Next →"}
+function next(n){if(n===5&&idx[5]===2){go(1);return}show(n,idx[n]+1)}function prev(n){show(n,idx[n]-1)}
+function hearts(){for(let i=0;i<7;i++)setTimeout(()=>{let x=document.createElement("span");x.className="float";x.textContent=["❤️","💖","💕","💗","💓","🌹","✨"][Math.floor(Math.random()*7)];x.style.left=Math.random()*100+"vw";x.style.fontSize=16+Math.random()*25+"px";x.style.animationDuration=5+Math.random()*5+"s";document.body.appendChild(x);setTimeout(()=>x.remove(),11000)},i*180)}
+hearts();
+</script>
+</body></html>
